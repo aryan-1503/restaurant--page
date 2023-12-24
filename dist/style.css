@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lato:wght@300;400&family=Roboto:wght@500&family=Rubik+Doodle+Shadow&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url("./images/background.png") center/cover no-repeat;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    width: 50vw;
+    height: 5vh;
+    background-color: #ff1515;
+    opacity: 0.95;
+    border-radius: 1rem;
+}
+
+button {
+    color: white;
+    font-weight: bolder;
+    background-color: #ff1515;
+    border: none;
+    border-radius: 1rem;
+    width: 8.5rem;
+    font-family: "Rubik Doodle Shadow", serif;
+    font-size: 1.3rem;
+}
+
+button:hover {
+    background-color: #f5c817;
+}
+
+#home,#contact {
+    background-color: #ff1515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    width: 40vw;
+    height: 86vh;
+    border-radius: 1rem;
+    opacity: 0.9;
+}
+
+#menu{
+    background-color: #ff1515;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    width: 40vw;
+    height: 86vh;
+    border-radius: 1rem;
+    opacity: 0.9;
+}
+.heading {
+    font-family: "Rubik Doodle Shadow", serif;
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.imgs {
+    margin-top: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imgs img {
+    object-fit: cover;
+    border-radius: inherit;
+    width: 150px;
+}
+
+#credit {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.contents {
+    font-family: "Comic Sans MS", serif;
+    font-size: medium;
+    margin-top: 1.75rem;
+    width: 30vw;
+    color: white;
+    text-align: justify;
+}
+
+.grid-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.food-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 0.2rem solid #040448;
+    background-color: #f5c817;
+    height: 22vh;
+    width: 16vw;
+}
+.food-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.food-info{
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 0.1rem;
+    font-family: "Comic Sans MS",serif;
+    font-weight: bolder;
+    font-size: 17px;
+    color: #040448;
+}
+
+.food-card:hover{
+    transform: scale(110%);
+}
+.food-img{
+    border-radius: 50%;
+    border: 2px solid #040448;
+}
+.food-img > img{
+    width: 200px;
+    height: 100px;
+    border-radius: inherit;
+}
+
+.contact-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5c817;
+    color: #040448;
+    font-size: 22px;
+    border-radius: 1rem;
+    border: 0.2rem solid #040448;
+    gap: 1rem;
+    width: 20vw;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.map-image img{
+    width: 35vw;
+}
